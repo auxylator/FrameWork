@@ -1,0 +1,43 @@
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+.text{
+  &.size-normal{
+    font-size: 18px;
+  }
+  &.center{
+    text-align: center;
+  }
+  &.white{
+    color: $white;
+  }
+  &.black{
+    color: $black;
+  }
+  &.turquoise{
+    color: $turquoise;
+  }
+  &.greensea{
+    color: $green-sea;
+  }
+  &.emerald{
+    color: $emerald;
+  }
+  &.wetasphalt{
+    color: $wet-asphalt
+  }
+  &.carrot{
+    color: $carrot;
+  }
+  &.alizarin{
+    color: $alizarin;
+  }
+}
+
+.code{
+  background: rgba(0,0,0,0.05);
+  padding: 10px;
+  border-radius: 4px;
+  color: $wet-asphalt;
+}

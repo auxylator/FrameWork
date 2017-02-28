@@ -1,0 +1,19 @@
+
+@import "color.scss";
+@import "grid.scss";
+@import "text.scss";
+@import "button.scss";
+@import "input.scss";
+@import "nav.scss";
+@import "shame.scss";
+
+
+//main
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+  width: 100% !important;
+  font-family: 'Open Sans', sans-serif;
+}
