@@ -7,10 +7,12 @@ $text-color: #fff;
   background: $background;
   overflow: hidden;
   &.fixed-top{
-    border-radius: 0;
     position: fixed;
     top: 0;
     z-index: 100;
+  }
+  &.no-border{
+    border-radius: 0;
   }
   &.fit{
     width: 100%;
@@ -65,6 +67,23 @@ $text-color: #fff;
     margin: 0px;
     &.nav{
       float: left;
+      &.fit{
+        float: none;
+        width: 100%;
+        li{
+          float: left;
+        }
+      }
+      &.three{
+        li{
+          width: 33.33%;
+        }
+      }
+      &.four{
+        li{
+          width: 25%;
+        }
+      }
     }
     &.option{
       float: right;
@@ -78,10 +97,8 @@ $text-color: #fff;
 
 @media (max-width: 920px) {
   ul{
-    li{
-      &.link{
-        display: none;
-      }
+    li.link{
+      display: none;
     }
   }
   .burger{

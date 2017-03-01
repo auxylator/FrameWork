@@ -1,4 +1,4 @@
-button{
+button, a{
   outline: none;
   &:hover{
     cursor: pointer;
@@ -14,7 +14,6 @@ button{
   display: block;
   input{
     margin: 0px 5px;
-    float: left;
     vertical-align: middle;
   }
   span{
@@ -69,7 +68,6 @@ button{
   }
   .check{
     visibility: hidden;
-    display: block;
     position: relative;
     border-radius: 3px;
     overflow: hidden;
@@ -118,7 +116,6 @@ button{
   }
   .switch{
     visibility: hidden;
-    display: block;
     position: relative;
     border-radius: 30px;
     overflow: hidden;
@@ -176,7 +173,7 @@ button{
   border-radius: 4px;
   position: relative;
   color: $white;
-  margin: 5px 0px;
+  margin: 5px 5px;
   overflow: hidden;
   &.fit{
     width: 100%;

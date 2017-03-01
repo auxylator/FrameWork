@@ -1,0 +1,54 @@
+.list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid $clouds;
+  .item{
+    border-bottom: 1px solid $clouds;
+    position: relative;
+    height: 69px;
+    &:only-child, &:last-child{
+      border: 0px;
+    }
+    &::after{
+      content: " ";
+      display: block;
+      clear: both;
+    }
+    div{
+      padding: 10px;
+      &.action{
+        padding: 0px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        ul{
+          height: 100%;
+          padding: 0;
+          margin: 0;
+          li{
+            height: 100%;
+            display: inline-block;
+          }
+        }
+        a{
+          padding: 10px 25px;
+          font-size: 28px;
+          display: block;
+          height: 100%;
+          width: 100%;
+          &:hover{
+            background: $clouds;
+          }
+        }
+        &.btn{
+          padding: 20px;
+          label{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
