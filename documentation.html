@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700" rel="stylesheet">
     <script src="https://use.fontawesome.com/24dd1f9e54.js"></script>
     <style media="screen">
-      #word-list{
+      #word-list, #settings{
         margin-top: 62px;
       }
     </style>
@@ -17,16 +17,18 @@
     <nav class="navigation fixed-top fit no-border">
       <ul class="nav">
         <!-- <li><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li> -->
-        <li><a href="#">Favorites</a></li>
+        <li><a  class="xlink" href="#">Favorites</a></li>
+        <!-- <li><input class="input wetasphalt" type="text" name="" placeholder="Search"></li> -->
       </ul>
       <ul class="option">
         <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+        <!-- <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
         <li><a href="#"><i class="fa fa-remove" aria-hidden="true"></i></a></li>
       </ul>
     </nav>
-    <ul id="word-list" class="list">
+    <!-- <ul id="word-list" class="list">
       <li class="item">
-        <div class="detail">
+        <div class="detail single">
           <h4 class="text wetasphalt no-margin">Jump <span>• (ja`~mp)</span></h4>
           <p class="text silver no-margin">ジャンプ</p>
         </div>
@@ -38,10 +40,10 @@
           </ul>
         </div>
       </li>
-    </ul>
-    <!-- <ul class="list">
+    </ul> -->
+    <ul id="settings" class="list">
       <li class="item">
-        <div class="detail">
+        <div class="detail single">
           <p class="text silver no-margin">Show pronunciation</p>
         </div>
         <div class="action btn">
@@ -51,7 +53,7 @@
         </div>
       </li>
       <li class="item">
-        <div class="detail">
+        <div class="detail single">
           <p class="text silver no-margin">Show translation</p>
         </div>
         <div class="action btn">
@@ -60,6 +62,6 @@
           </label>
         </div>
       </li>
-    </ul> -->
+    </ul>
   </body>
 </html>

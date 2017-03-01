@@ -32,6 +32,10 @@ $text-color: #fff;
     }
   }
   input{
+    &.fit{
+      width: 100%;
+    }
+    margin: 12px 10px;
     color: $text-color;
   }
   .burger{
@@ -60,6 +64,11 @@ $text-color: #fff;
     display: block;
     &:hover{
       background: rgba(255,255,255,0.5)
+    }
+    &.xlink{
+      &:hover{
+        background: none;
+      }
     }
   }
   ul{
