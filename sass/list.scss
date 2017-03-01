@@ -17,6 +17,12 @@
     }
     div{
       padding: 10px;
+      &.detail.single{
+        height: 100%;
+        h1,p{
+          vertical-align: middle;
+        }
+      }
       &.action{
         padding: 0px;
         height: 100%;

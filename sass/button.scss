@@ -97,12 +97,13 @@ button, a{
       visibility: hidden;
       content: " ";
       display: block;
-      height: 19px;
-      width: 30px;
+      height: 5px;
+      width: 15px;
       position: absolute;
-      border: 5px solid #fff;
-      top: -15px;
-      left: -8px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      top: 6px;
+      left: 3px;
       transform: rotate(-45deg);
     }
     &:checked{
@@ -200,6 +201,10 @@ button, a{
     &.disabled::after{
       display: none;
     }
+  }
+  &.link{
+    background: none;
+    color: $peter-river;
   }
   &.normal{
     background: $peter-river;
