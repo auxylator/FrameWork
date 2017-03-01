@@ -10,14 +10,13 @@
   </head>
   <body>
 
-    <nav class="navigation fixed-top fit wetasphalt">
+    <nav class="navigation fixed-top fit no-border wetasphalt">
       <a class="brand" href=""><h5>FrameWork</h5></a>
       <ul class="nav">
         <li class="link"><a href="#nav">Navigation</a></li>
         <li class="link"><a href="#button">Buttons</a></li>
         <li class="link"><a href="#typhography">Typhography</a></li>
         <li class="link"><a href="#grid">Grid</a></li>
-        <!-- <li class="link"><a href="documentation.html">Documentation</a></li> -->
       </ul>
       <ul class="option">
         <li class="link"><a href="https://github.com/auxylator">made by jkbicbic</a></li>
@@ -42,9 +41,13 @@
 
     <div id="nav" class="container">
       <div class="row">
-        <div class="column six">
-          <h1 class="text wetasphalt">Navigation</h1>
-          <nav class="navigation wetasphalt">
+        <div class="column six small">
+          <h1 class="text wetasphalt">Navigation Bars</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column six small">
+          <nav class="navigation">
             <a class="brand" href="">Brand</a>
             <ul class="nav">
               <li class="link"><a href="#">link</a></li>
@@ -63,12 +66,210 @@
             </button>
           </nav>
         </div>
+        <div class="column three small">
+          <nav class="navigation">
+            <ul class="nav">
+              <li><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+            <ul class="option">
+              <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="column three small">
+          <nav class="navigation">
+            <ul class="nav">
+              <li><a href="#">Brand</a></li>
+              <li><input class="input wetasphalt" type="text" name="" placeholder="Search"></li>
+            </ul>
+            <ul class="option">
+              <li class="link"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i></a></li>
+              <li class="link"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+            </ul>
+            <button class="burger" type="button" name="button">
+              <span class="top"></span>
+              <span class="patty"></span>
+              <span class="bottom"></span>
+            </button>
+          </nav>
+        </div>
+        <div class="column three small">
+          <nav class="navigation">
+            <ul class="nav fit four">
+              <li class="text center"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+              <li class="text center"><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i></a></li>
+              <li class="text center"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+              <li class="text center"><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="coulmn three small">
+
+        </div>
       </div>
+    </div>
+
+    <!-- Card -->
+
+    <div class="container">
       <div class="row">
         <div class="column six">
-          <h1 class="text wetasphalt">Sidebar</h1>
-          <ul class="">
+          <h1 class="text wetasphalt">Card</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column three small">
+          <div class="card">
+            <header>
+              <h2 class="text wetasphalt no-margin">This is a Card</h2>
+            </header>
+            <div class="body">
+              <p class="text silver no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <footer>
+              <div class="grab-right">
+                <button class="button normal" type="button" name="button"><span class="text size-normal"><i class="fa fa-check" aria-hidden="true"></i> Subscribe</span></button>
+              </div>
+            </footer>
+          </div>
+        </div>
+        <div class="column three small">
+          <div class="card">
+            <header>
+              <h2 class="text alizarin no-margin">Delete</h2>
+            </header>
+            <div class="body">
+              <p class="text silver no-margin">Are you sure you want to delete?</p>
+            </div>
+            <footer>
+              <div class="grab-right small">
+                <button class="button link" type="button" name="button"><span class="text silver size-normal">Cancel</span></button>
+                <button class="button danger" type="button" name="button"><span class="text size-normal"><i class="fa fa-trash" aria-hidden="true"></i> Delete</span></button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column three small">
+          <div class="card">
+            <header class="img">
+              <img src="assets/images/frecre.jpg" alt="">
+            </header>
+            <div class="body">
+              <h2 class="text wetasphalt no-margin">FreCre Inc </h2>
+              <p class="text silver no-margin">608 6F 2QUAD Cebu Business Park, Cardinal Rosales, Cebu City</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- List -->
+
+    <div class="container">
+      <div class="row">
+        <div class="column six small">
+          <h1 class="text wetasphalt">List</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column three small">
+          <ul class="list">
+            <li class="item">
+              <div class="detail">
+                <h4 class="text wetasphalt no-margin">John Doe</h4>
+                <p class="text silver no-margin">UI/UX Designer</p>
+              </div>
+              <div class="action">
+                <ul>
+                  <li>
+                    <a><i class="fa fa-user-circle text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="detail">
+                <h4 class="text wetasphalt no-margin">Jump</h4>
+                <p class="text silver no-margin"> ジャンプ</p>
+              </div>
+              <div class="action">
+                <ul>
+                  <li>
+                    <a><i class="fa fa-pencil text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-trash text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="item">
+              <div class="detail">
+                <h4 class="text wetasphalt no-margin">detail</h4>
+                <p class="text silver no-margin">this is detail</p>
+              </div>
+              <div class="action">
+                <ul>
+                  <li>
+                    <a><i class="fa fa-volume-up text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-pencil text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a><i class="fa fa-cog text text size-normal wetasphalt" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="column three small">
+          <ul class="list">
+            <li class="item">
+              <div class="detail single">
+                <p class="text silver no-margin">Subscribe</p>
+              </div>
+              <div class="action btn">
+                <label class="checkbox">
+                  <input type="checkbox" class="switch" name="" value="">
+                </label>
+              </div>
+            </li>
+            <li class="item">
+              <div class="detail single">
+                <p class="text silver no-margin">Opt out email</p>
+              </div>
+              <div class="action btn">
+                <label class="checkbox">
+                  <input type="checkbox" class="check" name="" value="">
+                </label>
+              </div>
+            </li>
+            <li class="item">
+              <div class="detail single">
+                <p class="text silver no-margin">Show to friends</p>
+              </div>
+              <div class="action btn">
+                <label class="checkbox">
+                  <input type="checkbox" class="check" name="" value="">
+                </label>
+              </div>
+            </li>
+            <li class="item">
+              <div class="detail single">
+                <p class="text silver no-margin">Radio this</p>
+              </div>
+              <div class="action btn">
+                <label class="checkbox">
+                  <input type="checkbox" class="radio" name="samprad" value="">
+                </label>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -85,6 +286,7 @@
           <button type="button" class="button warning" name="button"><span class="text size-normal">Warning</span></button>
           <button type="button" class="button danger" name="button"><span class="text size-normal">Danger</span></button>
           <button type="button" class="button disabled" name="button" disabled><span class="text size-normal">Disabled</span></button>
+          <button type="button" class="button link" name="button" disabled><span class="text size-normal">Link</span></button>
         </div>
         <div class="column one medium small">
           <h1 class="text wetasphalt">Switch</h1>
@@ -119,15 +321,15 @@
         <div class="column two medium small">
           <h1 class="text wetasphalt">Radio</h1>
           <label class="checkbox">
-            <input type="checkbox" class="radio" name="" value="">
+            <input type="checkbox" class="radio" name="samprad" value="">
             <span>unchecked</span>
           </label>
           <label class="checkbox">
-            <input type="checkbox" class="radio" name="" value="" checked>
+            <input type="checkbox" class="radio" name="samprad" value="" checked>
             <span>checked</span>
           </label>
           <label class="checkbox">
-            <input type="checkbox" class="radio disabled" name="" value="" disabled>
+            <input type="checkbox" class="radio disabled" name="samprad" value="" disabled>
             <span>disabled</span>
           </label>
         </div>

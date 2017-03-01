@@ -1,4 +1,4 @@
-button{
+button, a{
   outline: none;
   &:hover{
     cursor: pointer;
@@ -14,7 +14,6 @@ button{
   display: block;
   input{
     margin: 0px 5px;
-    float: left;
     vertical-align: middle;
   }
   span{
@@ -26,11 +25,12 @@ button{
   .radio{
 		visibility: hidden;
 		position: relative;
-		height: 20px;
-		width: 20px;
+		height: 18px;
+		width: 18px;
     &.disabled{
       &::before{
-        border: 1px solid rgba(0,0,0,0.1);
+        background: $clouds;
+        border: 3px solid $clouds;
       }
       &::after{
         background: rgba(255,255,255,0.5);
@@ -45,31 +45,18 @@ button{
 			height: 100%;
 			width: 100%;
 			border-radius: 100%;
-      border: 1px solid rgba(0,0,0,0.35);
-		}
-		&::after{
-			position: absolute;
-			content: " ";
-			top: 3px;
-			left: 3px;
-			visibility: hidden;
-			height: 16px;
-			width: 16px;
-			border-radius: 100%;
-      background: $emerald;
+      border: 3px solid $silver;
+      background: $silver;
 		}
 		&:checked{
 			&:before{
-        border: 1px solid $emerald;
-			}
-			&:after{
-				visibility: visible;
+        border: 3px solid $emerald;
+        background: $white;
 			}
 		}
   }
   .check{
     visibility: hidden;
-    display: block;
     position: relative;
     border-radius: 3px;
     overflow: hidden;
@@ -78,7 +65,7 @@ button{
     height: 25px;
     &.disabled{
       &::before{
-        background: rgba(0,0,0,0.1);
+        background: $clouds;
       }
       &::after{
         background: rgba(255,255,255,0.5);
@@ -91,7 +78,7 @@ button{
       height: 100%;
       width: 100%;
       position: absolute;
-      background: rgba(0,0,0,0.35);
+      background: $silver;
       top: 0;
       left: 0;
     }
@@ -99,12 +86,13 @@ button{
       visibility: hidden;
       content: " ";
       display: block;
-      height: 19px;
-      width: 30px;
+      height: 5px;
+      width: 15px;
       position: absolute;
-      border: 5px solid #fff;
-      top: -15px;
-      left: -8px;
+      border-left: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      top: 6px;
+      left: 3px;
       transform: rotate(-45deg);
     }
     &:checked{
@@ -118,17 +106,15 @@ button{
   }
   .switch{
     visibility: hidden;
-    display: block;
     position: relative;
-    border-radius: 30px;
-    overflow: hidden;
     // border: 1px solid rgba(0,0,0,0.15);
     padding: 10px;
     width: 45px;
     height: 25px;
     &.disabled{
       &::before{
-        background: rgba(0,0,0,0.1);
+        border: 3px solid $clouds;
+        background: $clouds;
       }
       &::after{
         background: rgba(255,255,255,0.5);
@@ -138,11 +124,13 @@ button{
       transition: all 0.3s ease-in-out;
       visibility: visible;
       content: " ";
+      border-radius: 30px;
       display: block;
       height: 100%;
       width: 100%;
       position: absolute;
-      background: rgba(0,0,0,0.35);
+      background: $silver;
+      border: 3px solid $silver;
       top: 0;
       left: 0;
     }
@@ -151,17 +139,19 @@ button{
       visibility: visible;
       content: " ";
       display: block;
-      height: 19px;
-      width: 19px;
+      height: 25px;
+      width: 25px;
+      box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
       border-radius: 100%;
       position: absolute;
-      background: $white;
+      background: #fff;
       top: 3px;
       left: 3px;
     }
     &:checked{
       &::before{
         background: $emerald;
+        border: 3px solid $emerald;
       }
       &::after{
         left: 23px;
@@ -176,7 +166,7 @@ button{
   border-radius: 4px;
   position: relative;
   color: $white;
-  margin: 5px 0px;
+  margin: 5px 5px;
   overflow: hidden;
   &.fit{
     width: 100%;
@@ -203,6 +193,10 @@ button{
     &.disabled::after{
       display: none;
     }
+  }
+  &.link{
+    background: none;
+    color: $peter-river;
   }
   &.normal{
     background: $peter-river;
