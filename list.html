@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>framework</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/24dd1f9e54.js"></script>
+    <style media="screen">
+      #word-list, #settings{
+        margin-top: 62px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navigation fixed top fit no-border carrot">
+      <ul class="nav">
+        <!-- <li><a href="#"><i class="fa fa-remove" aria-hidden="true"></i></a></li> -->
+        <!-- <li><a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></li> -->
+        <!-- <li><a href="#"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></a></li> -->
+        <li><a  class="xlink">List</a></li>
+        <!-- <li><input class="input wetasphalt" type="text" name="" placeholder="Search"></li> -->
+        <!-- <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
+      </ul>
+      <ul class="option">
+        <!-- <li><a href="#"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></a></li> -->
+        <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+    <ul id="word-list" class="list">
+      <li class="item">
+        <div class="detail">
+          <!-- <h4 class="text wetasphalt no-margin">Jump</h4> -->
+          <h4 class="text wetasphalt no-margin"> Antidisestablishmentarianism</h4>
+          <p class="text silver no-margin">ジャンプ  <span>• (ja`~mp)</span> <span>• time</span></p>
+        </div>
+        <div class="action">
+          <ul>
+            <li>
+              <a><i class="fa fa-volume-up text text size-normal wetasphalt" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul id="settings" class="list">
+      <li class="item">
+        <div class="detail single">
+          <p class="text silver no-margin">Sort A-Z</p>
+        </div>
+        <div class="action btn">
+          <label class="checkbox">
+            <input type="checkbox" class="switch" name="" value="">
+          </label>
+        </div>
+      </li>
+      <li class="item">
+        <div class="detail single">
+          <p class="text silver no-margin">Show pronunciation</p>
+        </div>
+        <div class="action btn">
+          <label class="checkbox">
+            <input type="radio" class="radio" name="samprad" value="1" checked>
+          </label>
+        </div>
+      </li>
+      <li class="item">
+        <div class="detail single">
+          <p class="text silver no-margin">Show translation</p>
+        </div>
+        <div class="action btn">
+          <label class="checkbox">
+              <input type="radio" class="radio" name="samprad" value="2">
+          </label>
+        </div>
+      </li>
+      <li class="item">
+        <div class="detail single">
+          <p class="text silver no-margin">Show time</p>
+        </div>
+        <div class="action btn">
+          <label class="checkbox">
+              <input type="radio" class="radio" name="samprad" value="3">
+          </label>
+        </div>
+      </li>
+    </ul>
+    <button class="button circle fixed bottom-right" type="button" name="button"><i class="fa fa-remove"></i></button>
+  </body>
+</html>

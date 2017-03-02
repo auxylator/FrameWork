@@ -58,7 +58,6 @@ button, a{
   .check{
     visibility: hidden;
     position: relative;
-    border-radius: 3px;
     overflow: hidden;
     padding: 10px;
     width: 25px;
@@ -75,6 +74,7 @@ button, a{
       visibility: visible;
       content: " ";
       display: block;
+      border-radius: 3px;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -145,7 +145,7 @@ button, a{
       position: absolute;
       background: $clouds;
       top: 0px;
-      left: 0px;
+      left: -1px;
     }
     &:checked{
       &::before{
@@ -170,6 +170,28 @@ button, a{
   overflow: hidden;
   &.fit{
     width: 100%;
+  }
+  &.circle{
+    border-radius: 100%;
+    width: 50px;
+    padding: 10px;
+    height: 50px;
+    display: block;
+    box-shadow: 0px 5px 5px $silver;
+    background: $carrot;
+    font-size: 18px;
+  }
+  &.fixed{
+    position: fixed;
+    z-index: 100;
+    &.bottom-left{
+      bottom: 5px;
+      left: 5px;
+    }
+    &.bottom-right{
+      bottom: 5px;
+      right: 5px;
+    }
   }
   &::after{
     content: " ";
