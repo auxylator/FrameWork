@@ -1,15 +1,28 @@
-$background: #2c3e50;
-$text-color: #fff;
+
 
 
 .navigation{
   border-radius: 4px;
-  background: $background;
+  background: $wet-asphalt;
   overflow: hidden;
-  &.fixed-top{
+  &.alizarin{
+    background: $alizarin;
+  }
+  &.pomegranate{
+    background: $pomegranate;
+  }
+  &.carrot{
+    background: $carrot;
+  }
+  &.fixed{
     position: fixed;
-    top: 0;
     z-index: 100;
+    &.top{
+      top: 0;
+    }
+    &.bottom{
+      bottom: 0;
+    }
   }
   &.no-border{
     border-radius: 0;
@@ -36,7 +49,7 @@ $text-color: #fff;
       width: 100%;
     }
     margin: 12px 10px;
-    color: $text-color;
+    color: $white;
   }
   .burger{
     display: none;
@@ -47,7 +60,7 @@ $text-color: #fff;
     border: 0px;
     span{
       display: block;
-      background: $text-color;
+      background: $white;
       width: 5px;
       height: 5px;
       border-radius: 3px;
@@ -59,7 +72,7 @@ $text-color: #fff;
   }
   a{
     text-decoration: none;
-    color: $text-color;
+    color: $white;
     padding: 20px 25px;
     display: block;
     &:hover{
@@ -91,6 +104,11 @@ $text-color: #fff;
       &.four{
         li{
           width: 25%;
+        }
+      }
+      &.five{
+        li{
+          width: 20%;
         }
       }
     }
