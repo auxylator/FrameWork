@@ -1,0 +1,17 @@
+.img{
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  &.center{
+    margin: 0 auto;
+  }
+  &.fit{
+    width: 100%;
+    height: auto;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}

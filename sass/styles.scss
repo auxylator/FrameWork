@@ -1,15 +1,17 @@
-@import "+sass/color.scss";
-@import "+sass/grid.scss";
-@import "+sass/text.scss";
-@import "+sass/button.scss";
-@import "+sass/input.scss";
-@import "+sass/nav.scss";
-@import "+sass/card.scss";
-@import "+sass/list.scss";
-@import "+sass/animation.scss";
+@import "color.scss";
+@import "grid.scss";
+@import "text.scss";
+@import "button.scss";
+@import "input.scss";
+@import "nav.scss";
+@import "card.scss";
+@import "list.scss";
+@import "animation.scss";
+@import "progress-bar.scss";
+@import "image.scss";
 
 //Quick css fix
-@import "+sass/shame.scss";
+@import "shame.scss";
 
 
 //CDN imports
